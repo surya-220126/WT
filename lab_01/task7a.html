@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Page</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+        }
+
+        .greeting-box {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="greeting-box">
+    <h1 id="title"></h1>
+    <p id="message"></p>
+</div>
+
+<script>
+    let name = prompt("What is your name?");
+
+    if (name && name.trim() !== "") {
+        document.getElementById("title").innerText = "Welcome, " + name + "!";
+        document.getElementById("message").innerText =
+            "Hope you have a wonderful day filled with success 😊";
+    } else {
+        document.getElementById("title").innerText = "Welcome!";
+        document.getElementById("message").innerText =
+            "Hope you have a wonderful day 😊";
+    }
+</script>
+
+</body>
+</html>

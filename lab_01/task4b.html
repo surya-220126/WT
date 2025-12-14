@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add and Remove Content</title>
+</head>
+<body>
+
+<h2>Dynamically Add / Remove Content</h2>
+
+<div id="content">
+    <p>This is original content.</p>
+</div>
+
+<input type="text" id="adder" placeholder="Enter your dynamic content">
+<button onclick="addContent()">Add Content</button>
+<button onclick="removeContent()">Remove Content</button>
+
+<script>
+function addContent() {
+    let newone = document.getElementById("adder").value;
+    document.getElementById("content").innerHTML += "<h3>" + newone + "</h3>";
+}
+
+function removeContent() {
+    document.getElementById("content").innerHTML = "";
+}
+</script>
+
+</body>
+</html>

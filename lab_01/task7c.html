@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Click the button to print this page</h2>
+
+<button onclick="printPage()">Print Page</button>
+
+<script>
+function printPage() {
+    window.print();
+}
+</script>
+
+</body>
+</html>

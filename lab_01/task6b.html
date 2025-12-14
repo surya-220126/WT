@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submit Console Message</title>
+</head>
+<body>
+
+<form onsubmit="showMessage(event)">
+    <input type="text" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function showMessage(event) {
+    event.preventDefault(); // stops page refresh
+    console.log("Form submitted successfully!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Style</title>
+</head>
+<body>
+
+<div id="text" style="width:300px; padding:20px; border:1px solid black;">
+    This is a DIV element. Its style will be changed.
+</div>
+
+<br>
+
+<button onclick="changeStyle()">Click to Change Style</button>
+
+<script>
+function changeStyle() {
+    let element = document.getElementById("text");
+
+    element.style.color = "white";           
+    element.style.fontSize = "22px";        
+    element.style.backgroundColor = "green"; 
+}
+</script>
+
+</body>
+</html>

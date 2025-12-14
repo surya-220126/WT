@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Paragraph Text</title>
+</head>
+<body>
+
+<p id="para">Web Technology is an important subject that helps students understand how websites and web applications are created. 
+    It includes learning HTML for structure, CSS</p>
+
+<input type="text" id="userInput" placeholder="Enter your text here">
+<button onclick="changeText()">Change Text</button>
+
+<script>
+function changeText() {
+    let text = document.getElementById("userInput").value;
+    document.getElementById("para").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
