@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.auth-container {
+    min-height: 100vh;
+
+    /* Use any online image URL here */
+    background: url("https://img.freepik.com/premium-photo/small-robot-with-friendly-face-waves_14117-997660.jpg") no-repeat top center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8%;
+}
+
+/* Optional: move box slightly down */
+@media (min-height: 700px) {
+    .auth-container {
+        align-items: flex-start;
+        padding-top: 5%;
+    }
+}
+
+.auth-box {
+    background: rgba(255, 255, 255, 0.95);
+    width: 360px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+.auth-box p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #38bdf8;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    background: #0ea5e9;
+}
+
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
