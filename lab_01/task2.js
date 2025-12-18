@@ -5,8 +5,7 @@ function greet(name) {
 // Function call
 greet("Surya");
 
-//arrow functions
-// Declare variables
+
 let num1 = 10;
 let num2 = 5;
 //addition
