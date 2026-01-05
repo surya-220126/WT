@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Courses</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+
+    <div class="courses-container">
+
+        <div class="course">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawEFgF6GtEMvW862Dp4wdumKCsVWv6ryBiQ&s" alt="ML Algorithms">
+            
+            <h3>Python for Machine Learning</h3>
+            <p>Learn Python basics required for ML and data science.</p>
+            <button  onclick="toggleFav(this)">mark as fav &hearts;</button>
+            
+        </div>
+
+        <div class="course">
+            <img src="https://cdn.shopaccino.com/igmguru/products/machine-learning-training-igmguru_1499895199_l.jpg?v=532" alt="Python for ML">
+            <h3>Machine Learning Algorithms</h3>
+            <p>Understand supervised and unsupervised learning techniques.</p>
+            <button  onclick="toggleFav(this)">mark as fav &hearts;</button>
+        </div>
+
+        <div class="course">
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210914173106/7-Best-Tools-to-Manage-Machine-Learning-Projects.jpg" alt="ML Projects">
+            <h3>ML Projects</h3>
+            <p>Build simple real-world machine learning projects.</p>
+            <button  onclick="toggleFav(this)">mark as fav &hearts;</button>
+        </div>
+
+    </div>
+    <script>
+    function toggleFav(button) {
+        let courseDiv = button;
+
+        
+        if (courseDiv.style.backgroundColor === "red") {
+            courseDiv.style.backgroundColor = "green";
+            button.innerHTML = "mark as fav &hearts;";
+            alert("course removed from favourite");
+        } else {
+            courseDiv.style.backgroundColor = "red";
+            button.innerHTML = "remove from fav &hearts;";
+            alert("course added as favourite");
+        }
+
+    }
+</script>
+
+
+
+</body>
+</html>

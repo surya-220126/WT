@@ -9,3 +9,6 @@ document.writeln("Your age is " + age+"<br><br>");
 // const example
 const course = "Data Science";
 document.writeln("You are enrolled in " + course+'<br><br>');
+
+var name = "surya";
+console.log("Hello, welcome to the course " + name+"<br><br>");

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    
+    background-image: url("https://www.shutterstock.com/image-vector/artificial-intelligence-circuit-electric-line-600nw-2465096659.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+    height: 100vh;
+}
+
+
+nav {
+    background-color: black;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.content {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 18px;
+}

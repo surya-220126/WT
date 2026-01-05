@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* REMOVE side background effect */
+
 .side-bg {
     display: none;
 }
