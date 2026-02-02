@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    <nav style="margin-left:60%; display:flex; gap:20px;">
+        <b><a href="register.html">Register</a></b>
+        <b><a href="login.html">Login</a></b>
+    </nav>
+
+    <h2 style="text-align:center;"><b>User Login</b></h2>
+
+    <form action="login.php" method="POST" 
+          style="width:250px; margin:0 auto; height:300px;">
+
+        <b>Username:</b><br>
+        <input 
+            type="text" 
+            name="username" 
+            required
+            style="border-radius:10px; width:100%; padding:8px;"
+        ><br><br>
+
+        <b>Password:</b><br>
+        <input 
+            type="password" 
+            name="password" 
+            required
+            style="border-radius:10px; width:100%; padding:8px;"
+        ><br><br>
+
+        <input 
+            type="submit" 
+            value="Login"
+            style="width:100%; padding:8px;"
+        >
+    </form>
+
+</body>
+</html>
