@@ -1,2 +1,5 @@
 new.txt
 new.txt.pub
+composer.json
+composer.lock
+.vendor
