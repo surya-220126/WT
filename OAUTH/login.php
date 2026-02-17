@@ -10,4 +10,4 @@ $client->addScope("profile");
 
 $authUrl = $client->createAuthUrl();
 header("Location: " . $authUrl);
-exit()
+exit();
